@@ -1,0 +1,79 @@
+### Cadastrar barbeiro
+
+POST http://localhost:3000/barbeiros
+Content-Type: application/json
+
+{
+    "nome": "Vanessa Tres",
+    "email": "vanessa@barbearia.com",
+    "cpf": "666.666.666-44",
+    "senha": "senha000"
+}
+
+### Buscar barbeiros 
+
+GET http://localhost:3000/barbeiros
+
+### Editar barbeiro
+
+PUT http://localhost:3000/barbeiros/1
+Content-Type: application/json
+
+{
+    "nome": "Vanessa Tres Atualizado",
+    "cpf": "666.666.666-44",
+    "senha": "novaSenha123"
+}
+
+### Deletar barbeiro 
+
+DELETE http://localhost:3000/barbeiros/1
+
+### Cadastrar cliente
+
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+    "nome": "Carlos Silva",
+    "cpf": "111.222.333-44",
+    "barbeiro_id": 1
+}
+
+### Listar clientes
+
+GET http://localhost:3000/clientes
+
+### Cadastrar agendamento
+
+POST http://localhost:3000/agendamentos
+Content-Type: application/json
+
+{
+    "cliente_id": 1,
+    "barbeiro_id": 1,
+    "data_hora": "2026-11-25 14:30:00"
+}
+
+### Listar agendamentos
+
+GET http://localhost:3000/agendamentos
+
+### Editar data do agendamento 
+
+PUT http://localhost:3000/agendamentos/1
+Content-Type: application/json
+
+{
+    "data_hora": "2026-11-26 16:00:00"
+}
+
+### Login do barbeiro 
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "vanessa@barbearia.com",
+    "senha": "senha000"
+}

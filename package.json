@@ -1,0 +1,28 @@
+{
+  "name": "sistema_saep_simulado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessaTres/sistema_saep_simulado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/vanessaTres/sistema_saep_simulado/issues"
+  },
+  "homepage": "https://github.com/vanessaTres/sistema_saep_simulado#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.4.3",
+    "fastify": "^5.12.8",
+    "pg": "^8.23.1"
+  }
+}
